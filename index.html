@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <title>Transportation Survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Transportation Survey</h1>
+      </div>
+      <form id="transport">
+        <div class="form-group">
+          <p>How do you get to work?</p>
+          <input type="checkbox" name="work" value="bike">By Bike<br>
+          <input type="checkbox" name="work" value="car">By Car<br>
+          <input type="checkbox" name="work" value="walk">Walking<br>
+          <input type="checkbox" name="work" value="bus">By Bus<br>
+          <input type="checkbox" name="work" value="train">By Train<br>
+          <input type="checkbox" name="work" value="taxi">By Taxi<br>
+        </div>
+        <div class="form-group">
+          <p>How do you travel for fun?</p>
+          <input type="checkbox" name="fun" value="bike">By Bike<br>
+          <input type="checkbox" name="fun" value="car">By Car<br>
+          <input type="checkbox" name="fun" value="walk">Walking<br>
+          <input type="checkbox" name="fun" value="bus">By Bus<br>
+          <input type="checkbox" name="fun" value="train">By Train<br>
+          <input type="checkbox" name="fun" value="taxi">By Taxi<br>
+        </div>
+        <button type="submit" class="btn btn-info" name="button">Submit Survey</button>
+      </form>
+      <span id="work-responses">
+        <p>Looks like you get to work:</p>
+      </span>
+      <span id="fun-responses">
+        <p>Looks like for fun you travel:</p>
+      </span>
+    </div>
+  </body>
+</html>
